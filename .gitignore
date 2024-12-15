@@ -10,7 +10,6 @@
 **/temp
 *.env
 **/DEADJOE
-
 .DS_Store
 /.env-gdc-local
 k8s/.env-gdc-local

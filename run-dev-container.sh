@@ -10,6 +10,11 @@ fi
 echo "Using compose bin '$COMPOSE_BIN'"
 export COMPOSE_BIN
 
+# Set AWS credentials securely using environment variables
+export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+export AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION:-us-east-1}
+
 docker --version
 
 # make sure windows git bash does not alter paths
